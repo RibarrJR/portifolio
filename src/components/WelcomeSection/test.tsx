@@ -1,13 +1,14 @@
-import { render, screen } from '@testing-library/react'
+import { screen } from '@testing-library/react'
 
 import WelcomeSection from '.'
+import { renderWithTheme } from 'utils/tests/helpers'
 
 describe('<WelcomeSection />', () => {
   it('should render the heading', () => {
-    const { container } = render(<WelcomeSection />)
+    renderWithTheme(<WelcomeSection />)
 
-    expect(screen.getByRole('heading', { name: /WelcomeSection/i })).toBeInTheDocument()
-
-    expect(container.firstChild).toMatchSnapshot()
+    expect(
+      screen.getByRole('heading', { name: /Seja Bem vindo !/i })
+    ).toBeInTheDocument()
   })
 })

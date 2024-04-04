@@ -28,13 +28,11 @@ export const TextWrapper = styled.h1`
   `}
 `
 export const ImageWrapper = styled.div`
-  ${({ theme }) => css`
-    background-image: url('/img/aboutme.jpg');
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: 100vh;
-  `}
+  background-image: url('/img/aboutme.jpg');
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
 `
 
 export const Description = styled.p`

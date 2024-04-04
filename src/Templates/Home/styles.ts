@@ -3,13 +3,11 @@ import styled, { css } from 'styled-components'
 import media from 'styled-media-query'
 
 export const Wrapper = styled.main`
-  ${({ theme }) => css`
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
-  `}
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
 `
 export const ContentSection = styled.section`
   ${({ theme }) => css`
