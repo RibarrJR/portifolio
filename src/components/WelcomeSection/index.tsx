@@ -10,7 +10,9 @@ const WelcomeSection = () => (
       Olá !! Fico feliz que tenha vindo me visitar no meu cantinho… quem sou eu
       ?<p> Clica ai embaixo que te mostro</p>
     </S.Subtitle>
-    <Button size="small">Começar</Button>
+    <Button size="small" aria-label="Começar">
+      Começar
+    </Button>
   </S.Wrapper>
 )
 
