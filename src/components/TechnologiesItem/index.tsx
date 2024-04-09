@@ -16,7 +16,7 @@ const TechnologiesItem: React.FC<TechnologiesItemProps> = ({
   color,
   reverse
 }) => (
-  <S.Wrapper reverse={reverse}>
+  <S.WrapperTechnologies reverse={reverse}>
     <S.SVGWrapper>
       <S.SVGImage aria-label={title} className="svgLogo" color={color}>
         {imgSVG}
@@ -27,7 +27,7 @@ const TechnologiesItem: React.FC<TechnologiesItemProps> = ({
       <S.Subtitle>{subtitle}</S.Subtitle>
       <Button size="small">Portifólio</Button>
     </S.ContentWrapper>
-  </S.Wrapper>
+  </S.WrapperTechnologies>
 )
 
 export default TechnologiesItem

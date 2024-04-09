@@ -4,6 +4,9 @@ import Media from 'styled-media-query'
 export const Wrapper = styled.div`
   ${({ theme }) => css`
     display: flex;
+    text-align: center;
+    font-size: ${theme.font.sizes.xxlarge};
+    margin: 0 0 ${theme.spacings.xxlarge} 0;
     color: ${theme.colors.black};
     flex-direction: column;
     justify-content: center;
