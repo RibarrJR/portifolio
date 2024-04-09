@@ -18,3 +18,8 @@ export const Title = styled.h1`
     color: ${theme.colors.black};
   `}
 `
+
+export const Divider = styled.hr`
+  width: 150px;
+  margin: 35px auto;
+`

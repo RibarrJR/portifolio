@@ -3,8 +3,9 @@ import media from 'styled-media-query'
 import Media from 'styled-media-query'
 export const Wrapper = styled.section`
   ${({ theme }) => css`
+    background-color: black;
     display: flex;
-    color: ${theme.colors.black};
+    color: ${theme.colors.white};
     flex-direction: row;
     justify-content: center;
     align-items: center;
@@ -16,7 +17,7 @@ export const Wrapper = styled.section`
 
 export const MyName = styled.h1`
   ${({ theme }) => css`
-    color: ${theme.colors.black};
+    color: ${theme.colors.white};
     padding: 0px;
   `}
 `
@@ -38,16 +39,18 @@ export const TextWrapper = styled.div`
 `
 export const ImageWrapper = styled.div`
   background-image: url('/img/aboutme.jpg');
-  background-size: contain;
-  background-position: center;
+  background-size: cover;
+  background-position: left;
   background-repeat: no-repeat;
   width: 100%;
   height: 100vh;
 
   ${Media.lessThan('medium')`
-       max-width: 90%;
-       max-height: 500px;
-    `}
+    margin-top: 10px;
+    border-radius:${({ theme }) => theme.border.radius};
+    max-width: 90%;
+    max-height: 500px;
+  `}
 `
 
 export const Description = styled.p`
@@ -56,7 +59,6 @@ export const Description = styled.p`
     padding: ${theme.spacings.medium} 0;
     font-size: ${theme.font.sizes.xsmall};
     color: ${theme.colors.gray};
-
     max-width: 500px;
   `}
 `

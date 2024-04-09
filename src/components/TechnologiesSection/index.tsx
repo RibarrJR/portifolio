@@ -6,11 +6,9 @@ import { ReactLogo } from '@styled-icons/simple-icons/ReactLogo'
 const TechnologiesSection = () => (
   <S.Wrapper>
     <S.Title aria-label="my name">Tecnologias</S.Title>
-    <hr />
     <TechnologiesItem {...ReactArgs} />
-    <hr />
+    <S.Divider />
     <TechnologiesItem {...AngularArgs} />
-    <hr />
   </S.Wrapper>
 )
 
