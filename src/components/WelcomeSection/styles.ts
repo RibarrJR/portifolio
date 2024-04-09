@@ -1,6 +1,7 @@
 import styled, { css } from 'styled-components'
+import Media from 'styled-media-query'
 
-export const Wrapper = styled.main`
+export const Wrapper = styled.div`
   ${({ theme }) => css`
     display: flex;
     color: ${theme.colors.black};
@@ -8,12 +9,16 @@ export const Wrapper = styled.main`
     justify-content: center;
     align-items: center;
     height: 100vh;
-    width: 100vw;
     background: ${theme.colors.white};
+    ${Media.lessThan('medium')`
+    video {
+      max-width: 80%;
+    }
+    `}
   `}
 `
 
-export const Subtitle = styled.p`
+export const Subtitle = styled.span`
   ${({ theme }) => css`
     text-align: center;
     padding: ${theme.spacings.xxsmall};
