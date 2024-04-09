@@ -5,7 +5,7 @@ export type WrapperProps = {
   reverse?: boolean
 }
 
-export const Wrapper = styled.div<WrapperProps>`
+export const WrapperTechnologies = styled.div<WrapperProps>`
   ${({ theme, reverse }) => css`
     display: flex;
     flex-direction: column;
@@ -50,6 +50,7 @@ export const ContentWrapper = styled.div`
 
 export const Title = styled.h1`
   ${({ theme }) => css`
+    font-size: ${theme.font.sizes.large};
     color: ${theme.colors.black};
   `}
 `

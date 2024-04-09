@@ -1,4 +1,5 @@
 import styled, { css } from 'styled-components'
+import media from 'styled-media-query'
 import Media from 'styled-media-query'
 export const Wrapper = styled.section`
   ${({ theme }) => css`
@@ -62,11 +63,16 @@ export const Description = styled.p`
 
 export const ButtonWrapper = styled.div`
   ${({ theme }) => css`
+    width: 100%;
     display: flex;
+    justify-content: flex-start;
+    gap: 10px;
     padding: ${theme.spacings.xsmall} 0;
     max-width: 500px;
-    Button {
-      margin: 0px ${theme.spacings.small} 0 0;
-    }
+    ${media.lessThan('medium')`
+      flex-direction: column;
+      align-items:center;
+      justify-content: center;
+  `}
   `}
 `

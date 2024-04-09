@@ -12,8 +12,9 @@ export const Wrapper = styled.div`
 export const Title = styled.h1`
   ${({ theme }) => css`
     width: 100%;
+    font-size: ${theme.font.sizes.xxlarge};
     text-align: center;
-    margin: ${theme.spacings.medium};
+    margin: ${theme.spacings.medium} 0;
     color: ${theme.colors.black};
   `}
 `
